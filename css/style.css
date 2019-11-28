@@ -4,15 +4,6 @@
   padding: 0;
 }
 
-.debug .container {
-  background-color: pink;
-  border: 1px solid black;
-}
-
-.debug .container [class*="col-"]{
-  border: 1px solid black;
-}
-
 .debug .container #sub-container > div {
   border: 1px solid white;
   background-color: #f07f80;
@@ -26,11 +17,17 @@
 
 .container [class*="col-"] {
   text-align: center;
-  line-height: 200px;
   font-weight: bold;
 }
 
 #sub-container {
   width: 100%;
   padding: 5px;
+}
+
+.container [class*="col-"] p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
