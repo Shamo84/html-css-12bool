@@ -4,28 +4,33 @@
   padding: 0;
 }
 
-.debug {
+.debug .container {
+  background-color: pink;
+  border: 1px solid black;
+}
 
+.debug .container [class*="col-"]{
+  border: 1px solid black;
+}
+
+.debug .container #sub-container > div {
+  border: 1px solid white;
+  background-color: #f07f80;
 }
 
 .container {
   height: 200px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
-  border: 1px solid black;
-  background-color: pink;
 }
 
 .container [class*="col-"] {
-  border: 1px solid black;
+  text-align: center;
+  line-height: 200px;
+  font-weight: bold;
 }
 
 #sub-container {
   width: 100%;
   padding: 5px;
-}
-
-#sub-container > div {
-  border: 1px solid white;
-  background-color: #f07f80;
 }
